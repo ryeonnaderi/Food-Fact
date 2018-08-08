@@ -19,14 +19,16 @@
         <header class="header">
             <img src="img/AppleLogo.png" alt="project logo" class="logo">
 
-            <form action="#" class="search">
-                <input type="text" class="search__input" placeholder="Search food">
+            <form action="localhost:8080" method="get" id="food-form" class="search">
+                <input type="text" id="food-input" class="search__input" placeholder="Search food">
                 <button class="search__button">
                     <svg class="search__icon">
                         <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
                     </svg>
                 </button>
             </form>
+
+            
 
             <nav class="user-nav">
                 <div class="user-nav__icon-box">
@@ -88,42 +90,34 @@
                     </figure>
                 </div>
 
-                <div class="food-list">
+               
 
-                    <h1 id="one">
-                        <form id="food-form">
-                          <label for="food-input">Enter Keyword</label>
-                          <input type="text" id="food-input">
-                          <input id="add-food" type="submit" value="Submit">
-                        </form>
-                      </h1>
-                    
-                      <div id="two">
-                        <li id = "pain">
-                    
-                        </li> 
-                      </div>
-                     
-                    
-                      <h1 id="three">
-                        <form id="number-form">
-                          <label for="number-input">Enter KeyNumber</label>
-                          <input type="text" id="number-input">
-                          <input id="add-number" type="submit" value="Submit">
-                        </form>
-                      </h1>
-                    
-                      <h1 id="four">Nutrition Facts</h1>
-                    
-                      <div id="food-name">
-                    
-                      </div>
-                    
-                      <div id="nutrients-value">
-                    
-                      </div>
+                <div class="detail">
+                    <div class="food-list">
+                        List of Foods
+                    </div>
+
+                    <div class="nutrients">
+                        Nutrient Values
+                    </div>
                 </div>
             </main>
+
+            <div id="two">
+                   
+                  </div>
+                 
+                
+                 
+                  <h1 id="four">Nutrition Facts</h1>
+                
+                  <div id="food-name">
+                
+                  </div>
+                
+                  <div id="nutrients-value">
+                
+                  </div>
         </div>
     </div>
 
