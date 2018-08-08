@@ -2,49 +2,140 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Animaltastic</title>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <link href="./css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="./javascript/usda.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>Project Two</title>
+
+
 </head>
 
 <body>
-  <h1 id="one">
-    <form id="food-form">
-      <label for="food-input">Enter Keyword</label>
-      <input type="text" id="food-input">
-      <input id="add-food" type="submit" value="Submit">
-    </form>
-  </h1>
+    <div class="container">
+        <header class="header">
+            <img src="img/AppleLogo.png" alt="project logo" class="logo">
 
-  <div id="two">
-    <li id = "pain">
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Search food">
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
 
-    </li> 
-  </div>
- 
+            <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="user-nav__notification">7</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-chat"></use>
+                    </svg>
+                    <span class="user-nav__notification">13</span>
+                </div>
+                <div class="user-nav__user">
+                    <img src="img/murray.jpg" alt="User photo" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">Bill</span>
+                </div>
+            </nav>
+        </header>
 
-  <h1 id="three">
-    <form id="number-form">
-      <label for="number-input">Enter KeyNumber</label>
-      <input type="text" id="number-input">
-      <input id="add-number" type="submit" value="Submit">
-    </form>
-  </h1>
 
-  <h1 id="four">Nutrition Facts</h1>
 
-  <div id="food-name">
 
-  </div>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="#" class="side-nav__link">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <span>Placholder 1</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <span>Placeholder 2</span>
+                        </a>
+                    </li>
+                </ul>
 
-  <div id="nutrients-value">
+                <div class="legal">
+                    &copy; 2017 by Awesomeness. All rights reserved.
+                </div>
+            </nav>
+            <main class="food-view">
+                <div class="gallery">
+                    <figure class="gallery__item">
+                        <img src="img/hotel-1.jpg" alt="Photo of food 1" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="img/hotel-2.jpg" alt="Photo of food 3" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="img/hotel-3.jpg" alt="Photo of food 4" class="gallery__photo">
+                    </figure>
+                </div>
 
-  </div>
+                <div class="food-list">
 
+                    <h1 id="one">
+                        <form id="food-form">
+                          <label for="food-input">Enter Keyword</label>
+                          <input type="text" id="food-input">
+                          <input id="add-food" type="submit" value="Submit">
+                        </form>
+                      </h1>
+                    
+                      <div id="two">
+                        <li id = "pain">
+                    
+                        </li> 
+                      </div>
+                     
+                    
+                      <h1 id="three">
+                        <form id="number-form">
+                          <label for="number-input">Enter KeyNumber</label>
+                          <input type="text" id="number-input">
+                          <input id="add-number" type="submit" value="Submit">
+                        </form>
+                      </h1>
+                    
+                      <h1 id="four">Nutrition Facts</h1>
+                    
+                      <div id="food-name">
+                    
+                      </div>
+                    
+                      <div id="nutrients-value">
+                    
+                      </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="./javascript/usda.js"></script>
 </body>
 
 </html>
