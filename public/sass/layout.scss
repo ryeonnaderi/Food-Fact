@@ -12,7 +12,7 @@
     font-size: 1.4rem;
     height: 7rem;
     background-color: #fff;
-    border-bottom: var(--color-grey-light-2);
+    border-bottom: var(--line);
 
     display: flex;
     justify-content: space-between;
@@ -41,6 +41,27 @@
     //for testing
     height: 80rem;
 
+    flex: 1;
+
+}
+
+.detail {
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--line);
+}
+
+.food-list {
+    background-color: #fff;
+    box-shadow: 0 2rem 5rem rgba(0,0,0,.06);
+    padding: 3rem;
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+
+}
+
+.nutrients {
+    background-color: yellowgreen;
     flex: 1;
 
 }

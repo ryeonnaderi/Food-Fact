@@ -29,7 +29,9 @@ Grey dark 3: #999
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
-  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3); }
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+  --line: 1px solid var(--color-grey-light-2); }
 
 * {
   margin: 0;
@@ -177,41 +179,6 @@ body {
     width: 100%;
     display: block; }
 
-#one {
-  border: solid;
-  width: 450px;
-  height: 100px;
-  top: 0px;
-  position: fixed; }
-
-#two {
-  border: solid;
-  position: fixed;
-  top: 120px;
-  width: 450px;
-  height: 600px;
-  overflow: scroll;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 15px; }
-
-#three {
-  border: solid;
-  position: fixed;
-  top: 0px;
-  left: 500px;
-  width: 450px;
-  height: 100px; }
-
-#four {
-  border: solid;
-  position: fixed;
-  top: 120px;
-  width: 450px;
-  height: 600px;
-  left: 500px;
-  overflow: scroll;
-  font-size: 20px; }
-
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -223,7 +190,7 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-2);
+  border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -241,4 +208,20 @@ body {
 .food-view {
   background-color: #fff;
   height: 80rem;
+  flex: 1; }
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--line); }
+
+.food-list {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+  flex: 0 0 60%;
+  margin-right: 4.5rem; }
+
+.nutrients {
+  background-color: yellowgreen;
   flex: 1; }
