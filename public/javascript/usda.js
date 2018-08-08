@@ -1,4 +1,3 @@
-// api key: Qrani6RonhXSZdvyBJ8X4aF5HrnR5WnVLAK8rXGo
 
 $(document).ready(function () {
 
@@ -10,7 +9,7 @@ $(document).ready(function () {
     var inputName = name.toLowerCase();
 
     if(nameArray.includes(inputName)){
-      alert("FUCK");
+      alert("Already searched for " +name);
     }
 
     else{
@@ -49,8 +48,9 @@ $(document).ready(function () {
   }
 
 
-  $(".appendedButton").on("click", function (event) {
+  $(".appendedButton").click(function (event) {
     event.preventDefault();
+    console.log("hi");
     var number = $("#number-input").val();
     var nutritionURL = "https://api.nal.usda.gov/ndb/reports/?ndbno=" + number + "&type=b&format=json&api_key=Qrani6RonhXSZdvyBJ8X4aF5HrnR5WnVLAK8rXGo";
     $.ajax({
