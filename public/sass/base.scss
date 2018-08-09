@@ -18,10 +18,15 @@ Grey dark 3: #999
 
 */
 :root {
-    --color-primary: #9b0110;
-    --color-primary-light:#ac0112;
-    --color-primary-mid: #8b010f;
-    --color-primary-dark: #69000b;
+    --color-primary: #521117;
+    --color-primary-light:#6e171f;
+    --color-primary-mid: #440e13;
+    --color-primary-dark: #440e13;
+
+    // --color-primary: #430a69;
+    // --color-primary-light:#570d88;
+    // --color-primary-mid: #2f074a;
+    // --color-primary-dark: #1b042b;
 
     --color-grey-light-1: #faf9f9;
     --color-grey-light-2: #f4f2f2;
@@ -37,6 +42,14 @@ Grey dark 3: #999
 
     --line: 1px solid var(--color-grey-light-2);
 }
+
+$bp-largest: 75em;     // 1200px
+$bp-large: 68.75em;    // 1100px
+$bp-medium: 56.25em;   // 900px
+$bp-small: 37.5em;     // 600px
+$bp-smallest: 31.25em; // 500px
+
+
 
 * {
     margin: 0;
@@ -59,7 +72,7 @@ body {
     font-weight: 400;
     line-height: 1.6rem;
     color: var(--color-grey-dark-2);
-    background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-dark));
+    background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
     background-size: cover;
     background-repeat: no-repeat;
 

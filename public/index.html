@@ -13,6 +13,10 @@
 </head>
 
 <body>
+
+    
+
+
     <main class="container" id="btn-home-view">
         <!-- home view -->
         <div id="home-view">
@@ -22,7 +26,7 @@
         <!--  -->
         <div class="container">
             <header class="header">
-                <img src="img/AppleLogo.png" alt="project logo" class="logo">
+                <img src="img/CountChocula.png" alt="project logo" class="logo">
 
                 <form action="localhost:8080" method="get" id="food-form" class="search">
                     <input type="text" id="food-input" class="search__input" placeholder="Search food">
@@ -34,17 +38,29 @@
                 </form>
                 <nav class="user-nav">
                     <div class="user-nav__icon-box">
-                        <svg class="user-nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
-                        </svg>
-                        <span class="user-nav__notification">7</span>
+
+                        <a href="#" class="side-nav__link">
+                                <button id="btn-login" class="outline-button">
+                            <!-- <button id="btn-login" class="btn btn-primary btn-margin"> -->
+                                Log In
+                                
+                            </button>
+                        </a>
+
                     </div>
                     <div class="user-nav__icon-box">
-                        <svg class="user-nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-chat"></use>
-                        </svg>
-                        <span class="user-nav__notification">13</span>
+
+                        <a href="#" class="side-nav__link">
+                           
+                            <button id="btn-logout">
+                            <!-- <button id="btn-logout" class="btn btn-primary btn-margin"> -->
+                                Log Out
+                            </button>
+                        </a>
+
                     </div>
+
+
                     <div class="user-nav__user">
                         <img src="img/murray.jpg" alt="User photo" class="user-nav__user-photo">
                         <span class="user-nav__user-name">Bill</span>
@@ -59,62 +75,77 @@
                                 <span>Home</span>
                             </a>
                         </li>
+
                         <li class="side-nav__item">
                             <a href="#" class="side-nav__link">
-                                <button id="btn-login" class="btn btn-primary btn-margin">
-                                    Log In
-                                </button>
+                                <span>My Counter</span>
                             </a>
                         </li>
-                        <li class="side-nav__item">
+
+                        <li class="side-nav__item ">
                             <a href="#" class="side-nav__link">
-                                <button id="btn-logout" class="btn btn-primary btn-margin">
-                                    Log Out
-                                </button>
+                                <span>Blog</span>
                             </a>
                         </li>
+
                     </ul>
                     <div class="legal">
-                        &copy; 2017 by Awesomeness. All rights reserved.
+                        &copy; 2017 by EZ Counter. All rights reserved.
                     </div>
                 </nav>
                 <main class="food-view">
                     <div class="gallery">
                         <figure class="gallery__item">
-                            <img src="img/hotel-1.jpg" alt="Photo of food 1" class="gallery__photo">
+                            <img src="img/food-1.jpg" alt="Photo of food 1" class="gallery__photo">
                         </figure>
                         <figure class="gallery__item">
-                            <img src="img/hotel-2.jpg" alt="Photo of food 3" class="gallery__photo">
+                            <img src="img/food-2.jpg" alt="Photo of food 3" class="gallery__photo">
                         </figure>
                         <figure class="gallery__item">
-                            <img src="img/hotel-3.jpg" alt="Photo of food 4" class="gallery__photo">
+                            <img src="img/food-3.jpg" alt="Photo of food 4" class="gallery__photo">
                         </figure>
                     </div>
                     <div class="detail">
-                        <div class="food-list">
+                        <!--#two-->
+                        <div id="food-list"> 
                             List of Foods
                         </div>
 
-                        <div class="nutrients">
+                        <!--#four-->
+                        <div id="nutrients">
                             Nutrient Values
                         </div>
+
+
+
+                       
                     </div>
+
+                    <div class="footer">
+                            <h2 class="footer__count">
+                                Let the Count help you count! Add food information to your your journal!
+                            </h2>
+                            <button class="btn">
+                                <span class="btn__visible">Add Item</span>
+                                <span class="btn__invisible">EZ Counter!</span>
+                            </button>
+                        </div>
                 </main>
-                <div id="two">
-                </div>
-                <h1 id="four">Nutrition Facts</h1>
-                <div id="food-name">
-                </div>
-                <div id="nutrients-value">
-                </div>
+
+                
+        
+                
             </div>
         </div>
     </main>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>\
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
     <script type="text/javascript" src="node_modules/auth0-js/build/auth0.js"></script>
     <script src="https://cdn.auth0.com/js/auth0/9.5.1/auth0.min.js"></script>
     <script src="./javascript/app.js"></script>
+    
     <script src="./javascript/usda.js"></script>
 </body>
 
