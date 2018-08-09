@@ -25,10 +25,10 @@ window.addEventListener("load", function() {
     var loginBtn = document.getElementById("btn-login");
     var logoutBtn = document.getElementById("btn-logout");
   
-    homeViewBtn.addEventListener("click", function() {
-      homeView.style.display = "inline-block";
-      loginView.style.display = "none";
-    });
+    // homeViewBtn.addEventListener("click", function() {
+    //   homeView.style.display = "inline-block";
+    //   loginView.style.display = "none";
+    // });
   
     logoutBtn.addEventListener("click", logout);
   
