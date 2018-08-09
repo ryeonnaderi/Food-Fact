@@ -1,6 +1,11 @@
 // api key: Qrani6RonhXSZdvyBJ8X4aF5HrnR5WnVLAK8rXGo
 
+
+
 $(document).ready(function() {
+
+  
+
   var nameArray = [];
   var input = $("#food-input");
 
@@ -43,7 +48,7 @@ $(document).ready(function() {
           button.attr("itemName", itemName);
           var productLi = $("<li>" + item.name + "</li>");
           productLi.append(button);
-          $("#two").append(productLi);
+          $("#food-list").append(productLi);
         });
       }
     });
@@ -53,7 +58,7 @@ $(document).ready(function() {
     event.preventDefault();
     console.log(this);
     var appendName = $(this).attr("itemName");
-    $("#four").append(appendName);
+    $("#nutrients").append(appendName);
     var number = $(this).attr("ndbno");
     var nutritionURL =
       "https://api.nal.usda.gov/ndb/reports/?ndbno=" +
@@ -65,11 +70,11 @@ $(document).ready(function() {
     }).then(function(response) {
       console.log(response);
       response.report.food.nutrients.forEach(function(nutrients) {
-        $("#four").append(
+        $("#nutrients").append(
           "<li>" + nutrients.name + ":  " + nutrients.value + "</li>"
         );
       });
-      $("#four").append("<br> " + "---------------");
+      $("#nutrients").append("<br> " + "---------------");
     });
   });
 });
