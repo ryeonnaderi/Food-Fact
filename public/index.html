@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+        crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -13,10 +14,6 @@
 </head>
 
 <body>
-
-    
-
-
     <main class="container" id="btn-home-view">
         <!-- home view -->
         <div id="home-view">
@@ -40,20 +37,18 @@
                     <div class="user-nav__icon-box">
 
                         <a href="#" class="side-nav__link">
-                                <button id="btn-login" class="outline-button">
-                            <!-- <button id="btn-login" class="btn btn-primary btn-margin"> -->
+                            <button id="btn-login" class=" login outline-button">
                                 Log In
-                                
                             </button>
                         </a>
 
                     </div>
+               
                     <div class="user-nav__icon-box">
 
                         <a href="#" class="side-nav__link">
-                           
-                            <button id="btn-logout">
-                            <!-- <button id="btn-logout" class="btn btn-primary btn-margin"> -->
+
+                            <button id="btn-logout" class=" logout outline-button">
                                 Log Out
                             </button>
                         </a>
@@ -107,7 +102,7 @@
                     </div>
                     <div class="detail">
                         <!--#two-->
-                        <div id="food-list"> 
+                        <div id="food-list">
                             List of Foods
                         </div>
 
@@ -115,37 +110,31 @@
                         <div id="nutrients">
                             Nutrient Values
                         </div>
-
-
-
-                       
                     </div>
 
                     <div class="footer">
-                            <h2 class="footer__count">
-                                Let the Count help you count! Add food information to your your journal!
-                            </h2>
-                            <button class="btn">
-                                <span class="btn__visible">Add Item</span>
-                                <span class="btn__invisible">EZ Counter!</span>
-                            </button>
-                        </div>
+                        <h2 class="footer__count">
+                            Let the Count help you count! Add food information to your your journal!
+                        </h2>
+                        <button class="btn">
+                            <span class="btn__visible">Add Item</span>
+                            <span class="btn__invisible">EZ Counter!</span>
+                        </button>
+                    </div>
                 </main>
 
-                
-        
-                
+
+
+
             </div>
         </div>
     </main>
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="node_modules/auth0-js/build/auth0.js"></script>
     <script src="https://cdn.auth0.com/js/auth0/9.5.1/auth0.min.js"></script>
     <script src="./javascript/app.js"></script>
-    
+
     <script src="./javascript/usda.js"></script>
 </body>
 
